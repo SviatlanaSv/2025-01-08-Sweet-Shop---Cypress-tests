@@ -1,0 +1,45 @@
+name: Run Cypress Tests
+
+on:
+  push:
+    branches:
+      - main # Run tests on pushes to the main branch
+  pull_request:
+    branches:
+      - main # Run tests on pull requests targeting the main branch
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout code
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18 # Use the Node.js version your project requires
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step 4: Run Cypress tests
+    - name: Run Cypress tests
+      run: npm run cypress:run
+      env:
+        # Ensure the CI environment variable is set for Cypress
+        CI: true
+
+    # Step 5: Upload test results (optional)
+    - name: Upload Cypress videos and screenshots
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: cypress-artifacts
+        path: |
+          cypress/screenshots
+          cypress/videos
