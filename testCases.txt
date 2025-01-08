@@ -1,22 +1,9 @@
-. No page/form for new user registration
-. "Your Account" Page -> "Previouse orders" section contains orders that were not ordered by the current user
-.  "Login" Page -> Login with invalid email "test@user" and validpassword "123456" is possible
-. "Your Basket" Page -> "Payment" Section -> "Continue to checkout button" is not working (if you click on the button, it does not lead to any other page or link)
-. "Your Basket" Page -> "Delivery" Section ->  after choosing "Standard Shipping (£1.99)" option, the total cost is not updated accordingly (£NaN)
-. "Your Basket" Page -> Entered data in the payment fields is not verified. One number or even a letter can be entered in the card number field, the same in the expiration field. 
-. "Your Basket" Page -> No possibility to test the option to use a promo code
-. "Your Account" Page -> Logout button does not exist
-. "Login" Page -> social media icons are not linked
-. The "About" page may be unavailable ("Page not found")when accessed from pages other than the main one.
-
-Klaida vs. Systemos trukumas
-
+Sweet Shop Test Cases
 
 https://sweetshop.netlify.app/
 
-Test cases:
 
-1. MAIN PAGE
+1. MAIN PAGE (Home page)
 https://sweetshop.netlify.app/
 
 1.1 Verify that the page is accessible and loads correctly
