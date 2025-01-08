@@ -1,0 +1,123 @@
+. No page/form for new user registration
+. "Your Account" Page -> "Previouse orders" section contains orders that were not ordered by the current user
+.  "Login" Page -> Login with invalid email "test@user" and validpassword "123456" is possible
+. "Your Basket" Page -> "Payment" Section -> "Continue to checkout button" is not working (if you click on the button, it does not lead to any other page or link)
+. "Your Basket" Page -> "Delivery" Section ->  after choosing "Standard Shipping (£1.99)" option, the total cost is not updated accordingly (£NaN)
+. "Your Basket" Page -> Entered data in the payment fields is not verified. One number or even a letter can be entered in the card number field, the same in the expiration field. 
+. "Your Basket" Page -> No possibility to test the option to use a promo code
+. "Your Account" Page -> Logout button does not exist
+. "Login" Page -> social media icons are not linked
+. The "About" page may be unavailable ("Page not found")when accessed from pages other than the main one.
+
+Klaida vs. Systemos trukumas
+
+
+https://sweetshop.netlify.app/
+
+Test cases:
+
+1. MAIN PAGE
+https://sweetshop.netlify.app/
+
+1.1 Verify that the page is accessible and loads correctly
+    1.1.1 Verify that the page title is "Sweet Shop"
+    1.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+1.2 Verify that the page header is "Welcome to Sweet Shop!"
+1.3 Verify that the page contains a navigation menu with the following links: "Sweets", "About", "Login", "Basket"
+1.4 Verify that the page contains a "Our most popular choice of retro sweets." section 
+1.5 Verify that each product has an image, name, and price
+1.6 Verify that when the “Add to Basket” button is clicked, the item is added to the cart and the cart icon is updated
+1.7 Verify that the “Browse Sweets” button works and takes the user to the "Sweets" page
+
+
+2. SWEETS PAGE
+https://sweetshop.netlify.app/sweets
+
+2.1 Verify that the page is accessible and loads correctly
+    2.1.1 Verify that the page title is "Sweet Shop"
+    2.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+2.2 Verify that the page header "“Browse Sweets” is visible
+2.3 Verify that each product has an image, name, and price
+2.4 Verify that when the “Add to Basket” button is clicked, the item is added to the cart and the cart icon is updated
+
+
+
+3.ABOUT PAGE
+https://sweetshop.netlify.app/about
+
+3.1 Verify that the page is accessible and loads correctly
+    3.1.1 Verify that the page title is "Sweet Shop"
+    3.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+3.2 Verify that the page header "Sweet Shop Project" is visible
+3.3 Verify that the page contains the text and text is visible 
+
+
+
+
+4. LOGIN PAGE
+https://sweetshop.netlify.app/login
+
+
+4.1 Page load testing:
+4.1.1 Verify that the page is accessible and loads correctly
+    4.1.1.1 Verify that the page title is "Sweet Shop"
+    4.1.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+4.1.2 Verify that the page header is "Login"
+4.1.3 Verify that the page contains a login form with fields for email and password
+4.1.4 Verify that images of Twitter, Facebook and LinkedIn are visible
+4.1.5 Verify that the page footer contains the text "Sweet Shop Project 2018"
+
+4.2 Unsuccessful Login
+4.2.1 Verify that it's not possible to login with an email adress "testuser.com" and password "123456"
+      4.2.1.1Verify that the error message "Please enter a valid email address." is visible
+
+4.3 Successful Login
+4.3.1 Verify that it's possible to login with an email adress "test@user.com" and password "123321"
+      4.3.1.1Verify that after clicking the "Login" button, the user is redirected to the "Your Account" page 
+
+
+5. "YOUR ACCOUNT" PAGE
+5.1 Verify that the page is accessible and loads correctly
+    5.1.1. Verify that the page title is "Sweet Shop"
+    5.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+    5.1.3 Verify that the page header is "Your Account"
+5.2 Verify the message "Welcome back test@user.com" is visible
+5.3 Verify that the page contains 3 sections: "Previouse orders", "Your basket" and "Item Order Breakdown"
+
+
+6.BASKET PAGE
+https://sweetshop.netlify.app/basket
+
+6.1 "Your Basket" Section
+6.1.1 Verify that the page is accessible and loads correctly
+    6.1.1.1 Verify that the page title is "Sweet Shop"
+    6.1.1.2 Verify that the page footer contains the text "Sweet Shop Project 2018"
+    6.1.1.3 Verify that the page header is "Your Basket"
+
+6.1.2 Verify that items added to the basket remain visible and do not disappear while navigating through the page.
+6.1.3 Add 3 items to the basket and verify that the items are visible in the basket, with the correct name, price, and quantity.
+6.1.4 Verify that the "Total (GBP)" section is visible and shows the correct total cost of the items in the basket.
+6.1.5 Verify that the "Delete item" button removes the item from the basket.
+6.1.6 Verify that the "Empty Basket" button removes all items from the basket.
+
+
+
+6.2 "Billing address" Section
+6.2.1 Verify that all necessary fields present in the "Billing address" section
+6.2.2. Verify that all fields can be filled in
+
+
+
+6.3 "Payment" Section
+6.3.1 Verify that payment section contains a form with fields "Name on card", "Credit card number", "Expiration", "CVV"
+6.3.2 Verify that all fields can be filled in
+6.3.3 Verify that the "Continue to checkout" button exist and is clickable.
+
+
+6.4 Successful Checkout Process
+6.5 Failed Checkout Process - Missing Shipping Address
+6.6 Failed Checkout Process - Missing Credit Card Number
+
+
+6.7 "Delivery" Section
+6.4.1 Verify that "Collect (FREE)" option is selected by default

@@ -1,0 +1,16 @@
+{
+  "name": "2025-01-03-sweet-shop-cypress",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.17.0"
+  }
+}
