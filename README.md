@@ -43,7 +43,7 @@ Ensure you have the following installed on your system:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/SviatlanaSv/2025-01-08-Sweet-Shop---Cypress-tests.git
+   git clone https://github.com/SviatlanaSv/2025-01-08-Sweet-Shop---Cypress-tests.git
    ```
 
 2. Install the required dependencies:
@@ -63,7 +63,7 @@ git clone https://github.com/SviatlanaSv/2025-01-08-Sweet-Shop---Cypress-tests.g
 
 3. To execute the tests in headless mode:
 ```bash
-npm run cypress:run
+   npm run cypress:run
 ```
 
 
