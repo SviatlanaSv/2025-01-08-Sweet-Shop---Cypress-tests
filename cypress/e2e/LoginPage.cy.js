@@ -1,9 +1,8 @@
 describe('Login Page Tests', () => {
-
-
   beforeEach(() => {
     cy.visit('https://sweetshop.netlify.app/login');
   });
+  
 
   it('should load the page correctly', () => {
     cy.url().should('eq', 'https://sweetshop.netlify.app/login');

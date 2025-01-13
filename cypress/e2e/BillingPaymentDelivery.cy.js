@@ -16,6 +16,7 @@ describe('"Billing Address" Section', () => {
   });
 });
 
+
   it('should allow the fields to be filled in', () => {
     cy.get('.col-md-6.mb-3').first().find('input.form-control').type('Test');
     cy.get('.col-md-6.mb-3').eq(1).find('input.form-control').type('User');
@@ -27,8 +28,6 @@ describe('"Billing Address" Section', () => {
   });
 
 
-
-
   describe('"Payment" Section', () => {
     it('should verify the presence and visibility of all fields', () => {
       cy.get('input#cc-name').should('exist').and('be.visible');
@@ -38,6 +37,7 @@ describe('"Billing Address" Section', () => {
     });
   });
 
+
     it('should allow the fields to be filled in', () => {
       cy.get('input#cc-name').type('Mastercard');
       cy.get('input#cc-number').type('1234 1234 1234 1234');
@@ -45,13 +45,11 @@ describe('"Billing Address" Section', () => {
       cy.get('input#cc-cvv').type('123');
     });
  
-  
 
 it('the "Continue to checkout" button should be visible and clickable', () => {
   cy.contains('button', 'Continue to checkout')
     .should('exist').and('be.visible').click();
 });
-
 
 
 describe('"Delivery" Section', () => {
@@ -117,7 +115,6 @@ describe('Failed Checkout Process - Missing Credit Card Number', () => {
     cy.get('select#country').select('United Kingdom');
     cy.get('select#city').select('Cardiff');
 
-   
     cy.get('input#cc-name').type('Mastercard');
     cy.get('input#cc-expiration').type('05/26');
     cy.get('input#cc-cvv').type('123');
@@ -127,7 +124,6 @@ describe('Failed Checkout Process - Missing Credit Card Number', () => {
   });
 });
 
- 
 });
 
 

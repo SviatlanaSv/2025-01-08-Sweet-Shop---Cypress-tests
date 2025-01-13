@@ -24,6 +24,7 @@ describe('Sweets Page Tests', () => {
     });
   });
 
+  
   it('should add an item to the basket when "Add to Basket" is clicked', () => {
     cy.get('.card').first().within(() => {
       cy.contains('Add to Basket').click(); 

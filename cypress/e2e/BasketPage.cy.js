@@ -38,19 +38,6 @@ describe('Basket Page Tests', () => {
        
       });
     });
-
-
-
-    // it('should display the total price in the "Total (GBP)" section', () => {
-    //   for (let i = 0; i < 2; i++) {
-    //     cy.visit('https://sweetshop.netlify.app/sweets');
-    //     cy.get('.card').eq(i).contains('Add to Basket').click();
-    //   }
-    
-    //   cy.visit('https://sweetshop.netlify.app/basket');
-    
-    //   cy.get('.list-group-item.d-flex.justify-content-between strong').should('be.visible').and('contain', '£').and('not.be.empty');
-    // });
     
 
     it('should calculate and display the correct total price in the "Total (GBP)" section', () => {
@@ -76,7 +63,6 @@ describe('Basket Page Tests', () => {
     });
     
     
-
     it('should remove an item from the basket when "Delete item" is clicked', () => {
       cy.visit('https://sweetshop.netlify.app/sweets');
       cy.get('.card').first().within(() => {

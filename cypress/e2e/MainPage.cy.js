@@ -50,7 +50,6 @@ describe('Sweet Shop Main Page Tests', () => {
   });
   
 
-
   it('should navigate to the Sweets page when "Browse Sweets" is clicked', () => {
     cy.contains('Browse Sweets').click();
     cy.url().should('include', '/sweets');
