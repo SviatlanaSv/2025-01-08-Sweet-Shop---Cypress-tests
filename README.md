@@ -44,6 +44,7 @@ Ensure you have the following installed on your system:
 1. Clone the repository to your local machine:
 ```bash
    git clone https://github.com/SviatlanaSv/2025-01-08-Sweet-Shop---Cypress-tests.git
+   cd 2025-01-08-Sweet-Shop---Cypress-tests
    ```
 
 2. Install the required dependencies:
