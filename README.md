@@ -61,6 +61,8 @@ Ensure you have the following installed on your system:
    ```
 
 2. Run the tests located in the `cypress/e2e` folder.
+<img width="941" alt="image" src="https://github.com/user-attachments/assets/f74f69d9-0d58-48b7-8f6c-62c5431b6a96" />
+
 
 3. To execute the tests in headless mode:
 ```bash
